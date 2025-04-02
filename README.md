@@ -1,6 +1,7 @@
 # Cursor Pro (iCloud) 自动化工具
 
 ⭐️ 在 GitHub 上给我们 Star — 这对我们是很大的鼓励！
+
 [English README](README-en.md)
 
 ## 目录

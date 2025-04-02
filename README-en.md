@@ -1,7 +1,8 @@
 # Cursor Pro (iCloud) Automation Tool
 
 ⭐️ Star us on GitHub — it motivates us a lot!
-[Chinese README](README.md)
+
+[中文 README](README.md)
 
 ## Table of Contents
 
