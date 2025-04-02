@@ -44,7 +44,7 @@
 
 > Mac 用户：如果您无法重命名文件，可以使用 `touch .env` 在同一目录中创建该文件。
 
-1. 下载 `.env.example` 文件并将其重命名为 `.env`
+1. 下载 [`.env.example`](https://github.com/Ryan0204/cursor-auto-icloud/blob/main/.env.example) 文件并将其重命名为 `.env`
 2. 填写 `.env` 文件
 
 ```env
@@ -94,10 +94,11 @@ ICLOUD_COOKIES=您的iCloud cookies（解释如下）
 
 ## 致谢
 
-没有这些出色项目的帮助，本项目无法完成：
+如果没有这些出色项目的帮助，本项目將无法完成：
 
 - [cursor-auto-free](https://github.com/chengazhen/cursor-auto-free)
 - [go-cursor-help](https://github.com/yuaotian/go-cursor-help)
+- [hidemyemail-generator](https://github.com/rtunazzz/hidemyemail-generator)
 
 ## 贡献
 

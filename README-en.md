@@ -44,7 +44,7 @@ Follow the setup instructions below, then run the tool.
 
 > Mac User: If you are not able to rename the file, you can use `touch .env` to create the file in the same directory as executable file.
 
-1. Download `.env.example` file and rename it to `.env`
+1. Download [`.env.example`](https://github.com/Ryan0204/cursor-auto-icloud/blob/main/.env.example) file and rename it to `.env`
 2. Fill in the `.env` file
 
 ```env
@@ -98,6 +98,7 @@ This project can't be done without the help of these amazing projects:
 
 - [cursor-auto-free](https://github.com/chengazhen/cursor-auto-free)
 - [go-cursor-help](https://github.com/yuaotian/go-cursor-help)
+- [hidemyemail-generator](https://github.com/rtunazzz/hidemyemail-generator)
 
 ## Contributing
 
